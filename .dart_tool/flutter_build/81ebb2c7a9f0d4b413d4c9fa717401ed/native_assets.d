@@ -1,0 +1,1 @@
+ C:\\Users\\Madoco\\AndroidStudioProjects\\primeiro_projeto\\.dart_tool\\flutter_build\\81ebb2c7a9f0d4b413d4c9fa717401ed\\native_assets.yaml: 
