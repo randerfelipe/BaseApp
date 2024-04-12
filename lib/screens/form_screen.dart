@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:primeiro_projeto/components/task.dart';
+import 'package:primeiro_projeto/data/task_dao.dart';
 import 'package:primeiro_projeto/data/task_inherited.dart';
 
 class FormScreen extends StatefulWidget {
@@ -153,9 +155,7 @@ class _FormScreenState extends State<FormScreen> {
                           //https://s2-techtudo.glbimg.com/uC8istX2sf9KQG_hMw4aenaHEiU=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2022/6/Z/BtyF8UT5aeLFwmccA9CQ/fotonaruto2.jpg
                           //     difficultyController.text)); //conversao para inteiro
                           // print(imageController.text);
-                          TaskInherited.of(widget.taskContext).newTask(
-                              nameController.text, imageController.text,
-                              int.parse(difficultyController.text));
+                          TaskDao().save(Task(nameController.text, imageController.text, int.parse(difficultyController.text),));
                           ScaffoldMessenger.of(context).showSnackBar(
                             const SnackBar(
                               content: Text('Criando uma nova Tarefa!'),

@@ -1,4 +1,0 @@
-#Thu Apr 04 08:40:14 BRT 2024
-base.0=C\:\\Users\\Madoco\\AndroidStudioProjects\\primeiro_projeto\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
-path.0=classes.dex
-renamed.0=classes.dex
